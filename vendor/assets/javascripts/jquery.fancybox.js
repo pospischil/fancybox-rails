@@ -72,7 +72,7 @@
 
 			_abort();
 
-			selectedOpts = $.extend({}, $.fn.fancybox.defaults, (typeof $(obj).data('fancybox') == 'undefined' ? selectedOpts : $(obj).data('fancybox')));
+			currentOpts = selectedOpts = $.extend({}, $.fn.fancybox.defaults, (typeof $(obj).data('fancybox') == 'undefined' ? selectedOpts : $(obj).data('fancybox')));
 
 			ret = selectedOpts.onStart(selectedArray, selectedIndex, selectedOpts);
 
